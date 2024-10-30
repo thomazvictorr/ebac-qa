@@ -5,12 +5,22 @@
             Quero usar a calculadora do sistema
             Para somar dois números
 
-            Cenário: Soma de 2 números
+            Contexto:
             Dado que eu acesse a calculadora
-            Quando eu somar 2 + 2
+
+            Cenário: Soma de 2 números com mais casas decimais
+            Quando eu somar 2 com 2
             Então o resultado dever ser 4
 
-            Esquema do Cenário: Soma de 2 números inteiros
+            Cenário: Soma de 2 números com mais casas decimais
+            Quando eu somar 10 com 1000
+            Então o resultado deve ser 1010
+
+            Cenário: Soma de 2 número negativos
+            Quando eu somar -20 com 30
+            Então o resultado deve ser 10
+
+            Esquema do Cenário: Soma de 2 números com tabela
             Quando eu somar <num1> + <num2>
             Então deve exibir <resultado>
 
@@ -33,3 +43,4 @@
             | "50"   | "20"  | "70"      |
             | "12"   | "21"  | "33"      |
             | "1"    | "1"   | "2"       |
+            | "-30"  | "50"  | "20"      | 
