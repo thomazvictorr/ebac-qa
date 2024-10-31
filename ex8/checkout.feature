@@ -35,4 +35,4 @@ Feature: Conclusão de cadastro na EBAC-SHOP
         And eu clico em "Cadastrar"
         Then eu devo ver a mensagem de alerta "Todos os campos obrigatórios devem ser preenchidos."
 
-# Esses cenários abordam diferentes situações que um usuário pode enfrentar ao tentar completar seu cadastro na EBAC-SHOP, garantindo que os critérios de acessibilidade sejam testados especificamente. Se precisar de mais alguma coisa, é só avisar!#
+# Esses cenários abordam diferentes situações que um usuário pode enfrentar ao tentar completar seu cadastro na EBAC-SHOP, garantindo que os critérios de acessibilidade sejam testados especificamente.
