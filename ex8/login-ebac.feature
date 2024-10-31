@@ -5,7 +5,7 @@ Feature: Login na plataforma EBAC-SHOP
     Quero fazer o login na plataforma
     Para visualizar meus pedidos
 
-    Contexto: Dado que eu estou na página de login
+    Background: Dado que eu estou na página de login
 
     Scenario: Login com dados válidos
         When eu insiro o nome de usuário "usuario_valido"
