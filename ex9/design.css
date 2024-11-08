@@ -3,7 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* CSS para o Menu Fixo */
+.fixed-menu {
+    position: fixed; /* Fixa o menu na página */
+    top: 0;
+    width: 100%;
+    background-color: #020000;
+    color: white;
+    padding: 15px 0;
+    z-index: 1000; /* Mantém o menu acima do conteúdo */
+}
 
+.fixed-menu nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fixed-menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+/* Adiciona algum espaço no topo do conteúdo para não ficar coberto pelo menu */
+body {
+    padding-top: 60px; /* Ajuste conforme a altura do menu */
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f3f3f3;
@@ -67,4 +94,96 @@ header h1 {
 
 p {
     margin-bottom: 20px; 
+}
+body {
+    margin: 40px;
+    background: repeating-linear-gradient(
+        90deg, 
+        #8B0000, 
+        #8B0000 40px, 
+        #ffffff 40px, 
+        #ffffff 80px, 
+        #000000 80px, 
+        #000000 120px 
+    );
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 80px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.history-page .float-right {
+    float: right;
+    margin-left: 10px;
+    width: 18%;
+    border-radius: 8px;
+}
+.history-page .centered-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.history-page .center-image {
+    width: 60%;
+    max-width: 640px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.history-page .float-left {
+    float: left;
+    margin-right: 20px; 
+    width: 50%;
+    border-radius: 8px;
+}
+.capacidade-page .float-right {
+    float: right;
+    margin-left: 10px;
+    width: 41%; 
+    border-radius: 8px;
+}
+.tour-page .float-left {
+    float: left;
+    margin-right: 20px; 
+    width: 30%;
+    border-radius: 8px;
+}
+.tour-page .centered-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.tour-page .float-right {
+    float: right;
+    margin-left: 10px;
+    width: 52%; 
+    border-radius: 8px;
 }
