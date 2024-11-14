@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .fixed-menu {
     position: fixed; 
     top: 0;
@@ -17,57 +18,60 @@
     border-radius: 8px; 
     text-align: center;
 }
+
 .fixed-menu nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .fixed-menu nav ul li a {
     color: white;
     text-decoration: none;
     padding: 8px 16px;
 }
 
-body {
-    padding-top: 60px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-}
 header h1 {
     font-size: 1.8em;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
+
 .navbar a:hover {
     background-color: #333;
     border-radius: 5px;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 .section-title {
     font-size: 2em;
     color: #8B0000;
     margin-bottom: 15px;
 }
+
 .card {
     background-color: white;
     border: 1px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
 }
+
 .footer {
     font-size: 0.8em;
     text-align: center;
@@ -78,7 +82,12 @@ header h1 {
 p {
     margin-bottom: 20px; 
 }
+
 body {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
     margin: 40px;
     background: repeating-linear-gradient(
         90deg, 
@@ -89,9 +98,8 @@ body {
         #000000 80px, 
         #000000 120px 
     );
-    font-family: 'Roboto', sans-serif;
-    color: #333;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -100,18 +108,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-body {
-    margin: 20px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f3f3;
-    color: #333;
-}
+
 .history-page .float-right {
     float: right;
     margin-left: 10px;
     width: 18%;
     border-radius: 8px;
 }
+
 .history-page .centered-image-text {
     display: flex;
     flex-direction: column;
@@ -119,30 +123,35 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .history-page .center-image {
     width: 60%;
     max-width: 640px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 .history-page .float-left {
     float: left;
     margin-right: 20px; 
     width: 50%;
     border-radius: 8px;
 }
+
 .capacidade-page .float-right {
     float: right;
     margin-left: 10px;
     width: 41%; 
     border-radius: 8px;
 }
+
 .tour-page .float-left {
     float: left;
     margin-right: 20px; 
     width: 30%;
     border-radius: 8px;
 }
+
 .tour-page .centered-image-text {
     display: flex;
     flex-direction: column;
@@ -150,18 +159,21 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .tour-page .float-right {
     float: right;
     margin-left: 10px;
     width: 52%; 
     border-radius: 8px;
 }
+
 .eventos-page .center-image {
     width: 70%;
     max-width: 740px;
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
 .eventos-page .centered-image-text {
     display: flex;
     flex-direction: column;
@@ -169,6 +181,7 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .fotos-page .carousel {
     position: relative;
     width: 90%;
@@ -192,6 +205,7 @@ body {
     object-fit: cover;
     border-radius: 8px;
 }
+
 .fotos-page .carousel-button {
     position: absolute;
     top: 50%;
@@ -203,10 +217,28 @@ body {
     cursor: pointer;
     padding: 10px;
 }
+
 .fotos-page .prev {
     left: 10px;
+
 }
 
 .fotos-page .next {
     right: 10px;
+}
+
+.index .centered-image-text  { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.index .center-image {
+    width: 70%;
+    max-width: 740px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
