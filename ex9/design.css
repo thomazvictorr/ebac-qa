@@ -160,6 +160,13 @@ body {
     margin-top: 20px;
 }
 
+.tour-page .center-image {
+    width: 60%;
+    max-width: 740px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
 .tour-page .float-right {
     float: right;
     margin-left: 10px;
@@ -242,3 +249,30 @@ body {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.contato-page .centered-image-text  { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.contato-page .center-image {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contato-page .textarea {
+        width: 100%;
+        height: auto; /* Permite que o JavaScript ajuste a altura */
+        padding: 10px;
+        border-radius: 8px;
+        resize: none; /* Remove a opção de redimensionamento */
+        overflow: hidden; /* Esconde a barra de rolagem até a altura aumentar */
+    }
+
+    
