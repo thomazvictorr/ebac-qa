@@ -79,6 +79,7 @@ header h1 {
     color: #f3f3f3;
     padding: 15px;
 }
+
 p {
     margin-bottom: 20px; 
 }
@@ -267,12 +268,42 @@ body {
 }
 
 .contato-page .textarea {
-        width: 100%;
-        height: auto; /* Permite que o JavaScript ajuste a altura */
-        padding: 10px;
-        border-radius: 8px;
-        resize: none; /* Remove a opção de redimensionamento */
-        overflow: hidden; /* Esconde a barra de rolagem até a altura aumentar */
-    }
+    width: 100%; 
+    max-width: 500px; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.contato-page .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato-page .input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contato-page .button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato-page .button:hover {
+    background-color: #600000;
+}
     
