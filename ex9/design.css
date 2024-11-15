@@ -306,4 +306,42 @@ body {
 .contato-page .button:hover {
     background-color: #600000;
 }
-    
+
+@media screen and (max-width: 768px) {
+
+    .fixed-menu nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+
+    .fixed-menu nav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+
+    .fixed-menu {
+        padding: 15px;
+    }
+
+
+    .container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fixed-menu nav ul li a {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+}
