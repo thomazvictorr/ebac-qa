@@ -2,7 +2,7 @@
 
 Funcionalidade: Conclusão de cadastro na EBAC-SHOP
     Como cliente da EBAC-SHOP
-    Quero fazer concluir meu cadastro
+    Quero concluir meu cadastro
     Para finalizar minha compra
 
     Contexto: Dado que eu estou na página de cadastro
