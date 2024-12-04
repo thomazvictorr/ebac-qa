@@ -1,0 +1,12 @@
+Dados do aluno:
+
+-Primeiro Nome: Thomaz Victor.
+-Profissão: Estudante.
+-Cidade: Santo André - São Paulo.
+-O que faz nas horas vaga: Estudo, gosto de ouvir música e ler;
+-Feedback sobre o curso Qualidade de Software: Curso didático, tutores atenciosos.
+-Feedback sobre a plataforma de estudo da EBAC: Nota 10.
+
+Obrigado!!!
+
+
