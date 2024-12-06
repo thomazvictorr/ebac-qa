@@ -1,0 +1,16 @@
+{
+  "name": "ex8",
+  "version": "1.0.0",
+  "main": "calculadora.js",
+  "scripts": {
+    "test": "cucumber-js" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "jest": "^29.7.0"
+  }
+}
