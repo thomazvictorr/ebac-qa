@@ -1,18 +1,27 @@
 /// <reference types="cypress"/>
+import produtosPage from "../../support/page-objects/produtos.page";
 
 describe('Funcionalidade: Produtos', () => {
     beforeEach(() => {
-        cy.visit('produtos')
+        produtosPage.visitarUrl()
 });
 
     it('Deve selecionar um produto da lista', () => {
-        cy.get('.products > .row')
-            //.first()
-            //.last()
-            //.eq(2)
-            .contains('Argus All-Weather Tank')
-            .click()
+        produtosPage.buscarProdutoLista('Ariel Roll Sleeve Sweatshirt')
+            cy.get('#tab-title-description > a').should('contain', 'Descrição')
+    });
 
-            cy.get('#tab-title-description > a')
+    it.only('Deve buscar um produto com sucesso', () => {
+        let produto = 'Celeste Sports Br'
+        produtosPage.buscarProduto(produto)
+        cy.get('.product_title').should('contain', produto)
+    });
+
+    it('Deve visitar a página do produto', () => {
+
+    });
+
+    it('Deve adicionar o produto ao carrinho', () => {
+        
     });
 });
