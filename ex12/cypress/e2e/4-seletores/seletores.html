@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Exemplo de HTML</title>
+</head>
+
+<body>
+    <h1>Título: Exemplo de seletores</h1>
+
+    <div class="pai" data-test="div-pai">
+        <ul>
+            <li class="filho-1">Item 1</li>
+            <li class="filho-2 item-especial">Item 2</li>
+            <li class="filho-3">Item 3</li>
+        </ul>
+        <div class="filho-4" id="id-filho">
+            Item solto
+        </div>
+        <br><br>
+    </div>
+
+    <div class="pai-tio-1" name="nome-do-atributo">
+        <span class="irmao" id="irmao-1"> Irmão 1 </span>
+        <span class="irmao" id="irmao-2"> Irmão 2 </span>
+        <br><br>
+    </div>
+
+    <div class="pai-tio-2">
+        <form id="formularioAvaliacao">
+            <br>
+            <label>O quanto você gosta de Sorvete?</label>
+            <select name="opcao">
+                <option class="filho-1" value="none">Selecione</option>
+                <option class="filho-2" value="muito">Muito</option>
+                <option class="filho-3" value="medio">Médio</option>
+                <option class="filho-4" value="pouco">Pouco</option>
+            </select>
+            <input id="id-enviar" type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <p id="mensagemFeedback" style="display: none;">Obrigado por compartilhar conosco!</p>
+    <script>
+        document.getElementById("formularioAvaliacao").addEventListener("submit", function (event) {
+            event.preventDefault(); // Impede o envio real do formulário
+            document.getElementById("mensagemFeedback").style.display = "block"; // Mostra a mensagem de feedback
+        });
+    </script>
+</body>
+
+</html>
