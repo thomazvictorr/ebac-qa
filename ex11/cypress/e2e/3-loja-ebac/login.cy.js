@@ -32,5 +32,4 @@ describe('Funcionalidade: Login', () =>{
             cy.get('.woocommerce-error').should('contain' , 'Erro: A senha fornecida para o e-mail thomazvictorr@gmail.com está incorreta.')
             cy.get('.woocommerce-error').should('exist')
         });
-    
     })
