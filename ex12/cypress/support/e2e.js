@@ -17,5 +17,3 @@
 
 import './commands/commands'
 import './commands/exercicioCommands'
-import './commands/exercicioprodutosPage'
-import './commands/produtos.page'
