@@ -1,4 +1,5 @@
-{
-  "usuario": "thomazvictorr@gmail.com",
-  "senha": "123456789"
-  }
+[
+  {"usuario": "thomazvictorr@gmail.com", "senha": "123456789"},
+  {"usuario": "aluno_ebac@teste.com", "senha": "teste@teste.com"}
+]
+  
