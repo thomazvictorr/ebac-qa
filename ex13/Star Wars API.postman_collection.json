@@ -88,7 +88,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Validar o nome do personagem\", function () {\r",
+							"pm.test(\"Validar o nome do planeta\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"Hoth\");\r",
 							"});"
 						],
