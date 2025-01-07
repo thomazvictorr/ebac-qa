@@ -9,7 +9,8 @@ describe('Teste de API - Login', () => {
           "email": "fulano@qa.com",
           "password": "teste"
       }
-    }).should((response) =>{
+    }).then((response) =>{
+      cy.log(response.body.authorization)
       expect(response.body.message).to.equal('Login realizado com sucesso')
       expect(response.status).to.equal(200)
     })
