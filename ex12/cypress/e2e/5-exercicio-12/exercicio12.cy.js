@@ -77,9 +77,8 @@ describe('Finalizar checkout', () => {
 describe('Validando a compra', () => {
         cy.get('.page-title', { timeout: 100000}).should('be.visible').should('contain', 'Pedido recebido')
         cy.get('.woocommerce-notice', { timeout: 100000}).should('be.visible').should('contain', 'Obrigado. Seu pedido foi recebido.')
+        });
     });
-
-            });
-        })
     })
+})
 })
