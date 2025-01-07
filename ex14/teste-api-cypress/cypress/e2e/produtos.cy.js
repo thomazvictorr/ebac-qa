@@ -2,6 +2,13 @@
 
 describe('Teste de API - Produtos', () => {
 
+    let token
+    beforeEach(() => {
+        cy.token('fulano@qa.com', 'teste').then(tkn => {
+            token = tkn
+        })
+    });
+
     it('Listar Produtos - GET', () => {
         cy.request({
             method: 'GET',
@@ -12,24 +19,21 @@ describe('Teste de API - Produtos', () => {
         }) 
     });  
 
-    it.only('Cadastrar produto - POST', () => {
-        // TODO: Criar token dinamicamente
-        let token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzM2MjA3NjE0LCJleHAiOjE3MzYyMDgyMTR9.Lx2zE6DpCyXGNCoGWg8LvPu3mP843lgaVjfS9SYse24"
-        cy.request({
-            method: 'POST',
-            url: 'produtos',
-            headers: {authorization: token},
-            body: {
-                // TODO: Criar produto dinamicamente
-                "nome": "Cabo USB",
-                "preco": 15,
-                "descricao": "Cabo USB do tipo C",
-                "quantidade": 100
-            }
-        }).should((response) => {
+    it('Cadastrar produto - POST', () => {
+        let produto = 'Produto EBAC ' + Math.floor(Math.random() * 1000000000)
+        cy.cadastrarProduto (token, produto, 15, 'Cabo USB do tipo C', 100)
+        .should((response) => {
             expect(response.status).equal(201)
             expect(response.body.message).equal('Cadastro realizado com sucesso')
         }) 
-        
+    });
+
+    it('Deve validar mensagem de produto cadastrado anteriormente', () => {
+        cy.cadastrarProduto (token, 'Cabo USB', 15, 'Cabo USB do tipo C', 100)
+        .should((response) => {
+            expect(response.status).equal(400)
+            expect(response.body.message).equal('Já existe produto com esse nome')
+        }) 
     });
 });
+
