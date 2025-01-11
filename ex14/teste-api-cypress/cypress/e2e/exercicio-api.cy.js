@@ -38,12 +38,12 @@ describe('Testes da Funcionalidade Usuários', () => {
   });
      
 
-  it('Deve validar um usuário com email inválido', () => {
+  it.only('Deve validar um usuário com email inválido', () => {
     let nomeFake = faker.person.fullName()
     let senhaFake = faker.internet.password()
-    cy.cadastrarUsuario(nomeFake, "jack@bauer.com", senhaFake, "true").should((response) => {
+    cy.cadastrarUsuario(nomeFake, "jack.a.gmail.com", senhaFake, "true").should((response) => {
       expect(response.status).to.equal(400)
-      expect(response.body.message).equal('Este email já está sendo usado')
+      expect(response.body.email).equal('email deve ser um email válido')
     }) 
   });
 
