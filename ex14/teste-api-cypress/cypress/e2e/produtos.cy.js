@@ -10,7 +10,7 @@ describe('Teste de API - Produtos', () => {
         })
     });
 
-    it.only('Deve validar contrato de produtos com sucesso', () => {
+    it('Deve validar contrato de produtos com sucesso', () => {
         cy.request('produtos').then(response =>{
             return contrato.validateAsync(response.body)
         })
