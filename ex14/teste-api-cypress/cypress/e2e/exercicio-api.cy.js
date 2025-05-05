@@ -38,7 +38,7 @@ describe('Testes da Funcionalidade Usuários', () => {
   });
      
 
-  it.only('Deve validar um usuário com email inválido', () => {
+  it('Deve validar um usuário com email inválido', () => {
     let nomeFake = faker.person.fullName()
     let senhaFake = faker.internet.password()
     cy.cadastrarUsuario(nomeFake, "jack.a.gmail.com", senhaFake, "true").should((response) => {
