@@ -1,0 +1,42 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clonar repositório') {
+            steps {
+                git branch: 'main', url: 'https://github.com/thomazvictorr/ebac-qa.git'
+            }
+        }
+
+        stage('Instalar dependências') {
+            steps {
+                dir('DevOps/exercicio-15') {
+                    ansiColor('xterm') {
+                        bat 'npm install'
+                    }
+                }
+            }
+        }
+
+        stage('Subir servidor') {
+            steps {
+                dir('DevOps/exercicio-15') {
+                    ansiColor('xterm') {
+                        bat 'start /MIN cmd /c "npm start"'
+                        bat 'npx wait-on http://localhost:3000'
+                    }
+                }
+            }
+        }
+
+        stage('Executar testes') {
+            steps {
+                dir('DevOps/exercicio-15') {
+                    ansiColor('xterm') {
+                        bat 'npm run cy:run'
+                    }
+                }
+            }
+        }
+    }
+}
